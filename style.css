@@ -13,7 +13,7 @@ body{
 
 .navbar-brand{
     padding: 0.2rem .5rem;
-    margin-left: 3.5rem;
+    margin-left: 2.5rem;
     margin-top: 1rem;
     border-radius: 10px;
     border:5px solid yellow;
@@ -147,8 +147,8 @@ p.para{
  font-size: 2.5rem;
 }
 nav button{
-    margin-top:1rem ;
-    margin-right: .5rem;
+    margin-top:.5rem ;
+    margin-right:0.4rem;
 }
 #navbarNavDropdown{
     margin-right: 4.5rem;
