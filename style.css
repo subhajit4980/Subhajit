@@ -198,7 +198,7 @@ nav button{
   .cardp:nth-child(even) img {
     order: 2;
   }
-  @media(max-width:600px) {
+  @media(max-width:650px) {
     .cardp {
       display: block;
     }
@@ -206,12 +206,12 @@ nav button{
         padding-left:2rem;
     }
     .navbar-brand{
-        margin-left:1.3rem;
-        margin-top: .33rem;
+        margin-left:0.2rem;
+        margin-top: .3rem;
       }
     .about-image{
     padding-left: 1.3rem ;
-}
+    }
      
   }
 .cardp.title>p{
