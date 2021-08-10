@@ -202,6 +202,9 @@ nav button{
     .cardp {
       display: block;
     }
+    .about-area{
+        padding-left:2rem;
+    }
   }
 .cardp.title>p{
     padding-left:6rem;
