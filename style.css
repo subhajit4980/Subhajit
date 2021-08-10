@@ -147,7 +147,7 @@ p.para{
  font-size: 2.5rem;
 }
 nav button{
-    margin-top:.5rem ;
+    margin-top:.35rem ;
     margin-right:0.4rem;
 }
 #navbarNavDropdown{
@@ -168,7 +168,7 @@ nav button{
       width: 100%;
       border-radius:10px ;
       margin-right: 3rem;
-      height: 400px;
+      height: 350px;
    
   }
  .about-area{
@@ -205,6 +205,11 @@ nav button{
     .about-area{
         padding-left:2rem;
     }
+    .navbar-brand{
+        margin-left:1.3rem;
+        margin-top: .33rem;
+      }
+     
   }
 .cardp.title>p{
     padding-left:6rem;
