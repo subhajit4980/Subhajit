@@ -66,6 +66,9 @@ body{
     padding: 2.5rem 0;
     width: 50rem;
     margin-left: 1rem;
+    padding-left: 3rem;
+    overflow: hidden;
+    overflow-y: hidden !important;
 }
 .title-text{
     font: normal bold 50px/72px "Roboto";
@@ -99,7 +102,9 @@ body{
 }
 
 .about-image{
-    padding-left: 2rem ;
+    margin-left: 4.5rem ;
+    padding-left: 3.5rem;
+    width:75%;
 }
 .about-title h2 >span{
     display: block;
@@ -201,16 +206,20 @@ nav button{
   @media(max-width:650px) {
     .cardp {
       display: block;
+      overflow: hidden;
     }
     .about-area{
         padding-left:2rem;
+        overflow: hidden;
     }
     .navbar-brand{
         margin-left:0.2rem;
         margin-top: .3rem;
       }
     .about-image{
-    padding-left: 1.3rem ;
+        padding-left: 1rem ;
+    margin-left: 1rem;
+    width: 80%;
     }
      
   }
@@ -341,4 +350,15 @@ margin-bottom: .5rem;
         padding: 1rem 180px;
         font-size: .4rem;
     }
+}
+.project span h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 130px;
+background-color: #4458dc;
+margin-bottom: 2rem;
 }
