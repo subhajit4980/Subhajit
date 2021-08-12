@@ -25,11 +25,6 @@ body{
     -ms-user-select: none;      /* IE 10+ */
     user-select: none;          /* Likely future */  
 }
-/* .navbar{
-    padding: 1rem 12rem;
-
-} */
-
 .navbar-nav{
   font-family: "Roboto",cursive;
   text-transform: uppercase;
@@ -250,7 +245,7 @@ nav button{
     align-items: center;
     text-align: center;
     /* grid-gap: 1rem; */
-    /* padding: 1rem 280px; */
+    padding: 3rem 190px;
     font-size: .4rem;
 }
 .skill-box{
