@@ -10,37 +10,6 @@ body{
     position: relative;
     
 } 
-
-.navbar-brand{
-    padding: 0.2rem .5rem;
-    margin-left: 2.5rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-    border:5px solid yellow;
-    color: blue;
-    font-family: cursive;
-    font-weight:bolder;
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */  
-}
-/* .navbar{
-    padding: 1rem 12rem;
-
-} */
-
-.navbar-nav{
-  font-family: "Roboto",cursive;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: black;  
-}
-.site-banner{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .site-title h3{
  padding-top: 25%;
  font-weight:500;
@@ -105,6 +74,7 @@ body{
     margin-left: 4.5rem ;
     padding-left: 3.5rem;
     width:75%;
+   
 }
 .about-title h2 >span{
     display: block;
@@ -158,22 +128,18 @@ nav button{
 #navbarNavDropdown{
     margin-right: 4.5rem;
 }
-.navbar-nav > li{
-    margin-left:30px;
-    margin-right:30px;
-  }
-  .dropdown:hover ul.dropdown-menu{ display: block; }
-  .container{
+.dropdown:hover ul.dropdown-menu{ display: block; }
+.container{
       max-width: 1100px;
       margin: auto;
-      overflow: auto;
+      overflow: hidden;
       padding:0 2rem ;
   }
   .cardp>img{
       width: 100%;
       border-radius:10px ;
       margin-right: 3rem;
-      height: 350px;
+      height: 370px;
    
   }
  .about-area{
@@ -190,6 +156,7 @@ nav button{
     background: gainsboro;
     margin-bottom: 2rem;
     border-radius: 10px;
+    overflow: hidden;
   }
   
   .cardp h3 {
@@ -212,16 +179,19 @@ nav button{
         padding-left:2rem;
         overflow: hidden;
     }
-    .navbar-brand{
-        margin-left:0.2rem;
-        margin-top: .3rem;
-      }
+    .banner-image>img{
+        padding: 2.5rem 0;
+        width: 50rem;
+        margin-left: .5rem;
+        padding-left: 1rem;
+        overflow: hidden;
+        overflow-y: hidden !important;
+    }
     .about-image{
-        padding-left: 1rem ;
+    padding-left: 1rem ;
     margin-left: 1rem;
     width: 80%;
-    }
-     
+}
   }
 .cardp.title>p{
     padding-left:6rem;
@@ -249,8 +219,8 @@ nav button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* grid-gap: 1rem; */
-    /* padding: 1rem 280px; */
+    /* grid-gap: .3rem; */
+    padding: 1rem 190px;
     font-size: .4rem;
 }
 .skill-box{
@@ -306,7 +276,7 @@ nav button{
     left: 0;
     width: 50%;
     height: 90px;
-    background: ;
+    /* background: ; */
 
 }
 .icon{
@@ -319,6 +289,7 @@ nav button{
 }
 .icon:hover{
     width:100px ;
+    transition: .2s;
 }
 .headr{
     text-align: center;
@@ -350,6 +321,12 @@ margin-bottom: .5rem;
         padding: 1rem 180px;
         font-size: .4rem;
     }
+    .about-area.container{
+        width: 68px;
+    }
+    .project.container.cardp{
+        margin: 2rem;
+    }
 }
 .project span h1::after{
     content: "";
@@ -358,7 +335,7 @@ margin-bottom: .5rem;
     left: 50%;
     transform: translate(-50%);
     height: 4px;
-    width: 130px;
+    width: 230px;
 background-color: #4458dc;
-margin-bottom: 2rem;
+margin-bottom: .7rem;
 }
