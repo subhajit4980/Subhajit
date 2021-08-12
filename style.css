@@ -66,6 +66,9 @@ body{
     padding: 2.5rem 0;
     width: 50rem;
     margin-left: 1rem;
+    padding-left: 3rem;
+    overflow: hidden;
+    overflow-y: hidden !important;
 }
 .title-text{
     font: normal bold 50px/72px "Roboto";
@@ -99,7 +102,9 @@ body{
 }
 
 .about-image{
-    padding-left: 2rem ;
+    margin-left: 4.5rem ;
+    padding-left: 3.5rem;
+    width:75%;
 }
 .about-title h2 >span{
     display: block;
@@ -201,16 +206,20 @@ nav button{
   @media(max-width:650px) {
     .cardp {
       display: block;
+      overflow: hidden;
     }
     .about-area{
         padding-left:2rem;
+        overflow: hidden;
     }
     .navbar-brand{
         margin-left:0.2rem;
         margin-top: .3rem;
       }
     .about-image{
-    padding-left: 1.3rem ;
+        padding-left: 1rem ;
+    margin-left: 1rem;
+    width: 80%;
     }
      
   }
@@ -234,57 +243,122 @@ nav button{
     background-clip: padding-box;
     color: black;
 }
-
-/* .js{
-    display: inline-flexbox;
+.container1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* grid-gap: 1rem; */
+    /* padding: 1rem 280px; */
+    font-size: .4rem;
 }
-.progress>img{
-    height: 30px;
+.skill-box{
+    padding: 1rem;
+    cursor: pointer;
 }
-svg{
-    position: relative;
-    width:150px;
-    height: 150px;
-    z-index: 1000;
-} */
-/* svg circle{
-    width: 100%;
-    height: 10%;
-    fill: none;
-    stroke: #191919;
-    stroke-width: 10;
-    stroke-linecap:round;
-    transform: translate(5px,5px);
-} */
-/* svg circle:nth-child(2){
-    stroke-dasharray: 220;
-    stroke-dashoffset: 220;
-}
-.cardx:nth-child(1)svg circle:nth-child(2)
-{
-    stroke:#4458dc;
-}
-.cardx:nth-child(2)svg circle:nth-child(2)
-{
-    stroke:#fc0be8;
-}
-.cardx:nth-child(3)svg circle:nth-child(2)
-{
-    stroke:#1bff2e;
-}
-.cardx:nth-child(4)svg circle:nth-child(2)
-{
-    stroke:#ff1919;
-} */
-/* .skills.container{
+.skill-title{
     display: flex;
-    width: 900px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    /* background: #101010; */
-/* } */
-/* .container.cardx{
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: .5rem;
     position: relative;
-    width: 250px;
-    height: 300px;
-} */ 
+}
+.skill-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #4458dc;
+    transition: .5s;
+}
+.skill-title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #4458dc;
+    transition: .5s;
+}
+
+.skill-title h3{
+    margin: .5rem;
+}
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: ;
+
+}
+.icon{
+    width: 80px;
+    z-index: 2;
+}
+.skill-box:hover > .skill-title:after,.skill-box:hover>.skill-title:before{
+
+    width: 35px;
+}
+.icon:hover{
+    width:100px ;
+}
+.headr{
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    font-family: "Poppins 600";
+    font-weight:bold;
+    font-size: 60px;
+}
+.headr::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 130px;
+background-color: #4458dc;
+margin-bottom: .5rem;
+}
+@media screen and (max-width:680px) {
+    .container1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* grid-gap: 1rem; */
+        padding: 1rem 180px;
+        font-size: .4rem;
+    }
+}
+.project span h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    width: 130px;
+background-color: #4458dc;
+margin-bottom: 2rem;
+}
